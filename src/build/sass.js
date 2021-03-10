@@ -1,5 +1,5 @@
 let {dirname} = require("path");
-let sassCompiler = require("node-sass");
+let sassCompiler = require("sass");
 
 module.exports = async function({filename, content, attributes}) {
 	let {css, stats} = await new Promise(function(resolve, reject) {
